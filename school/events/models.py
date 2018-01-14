@@ -1,11 +1,13 @@
 from django.db import models
 from django.utils import timezone
+import datetime
 
 
 class Events(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
     text = models.TextField()
+    event_date = models.DateTimeField(auto_now=False)
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
