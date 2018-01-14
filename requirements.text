@@ -1,0 +1,5 @@
+closure==20171112
+Django==1.8
+django-crispy-forms==1.4.0
+django-registration-redux==1.1
+virtualenv==15.1.0
